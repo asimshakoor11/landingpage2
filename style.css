@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid red; */
+}
+body{    
+    background: url("image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.navbar{
+    width: auto;
+    height: 75px;
+    margin: auto;
+    /* background-color: gray; */
+
+}
+
+.icon{
+    width: 200px;
+    height: 75px;
+    float: left;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: Arial;
+    margin-left: 45px;
+    margin-top: 20px;
+    float: left;
+}
+
+.menu{
+    width: 550px;
+    height: 75px;
+    float: left;
+    margin-left: 270px;
+    margin-right: -20px;
+
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul li{
+    list-style-type: none;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 14px;
+    position: relative;
+
+}
+
+#first{
+    margin-left: 300px;
+}
+ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul li::after{
+   content: '';
+   height: 3px;
+   width: 0;
+   background-color: #009688;
+   position: absolute;
+   left: 0%;
+   bottom: -10px;
+   transition: 0.5s;    
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+.content{
+    color: white;
+   
+}
+.content h1{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+
+}
+
+.content p{
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+.btn{
+
+    margin-left: 450px;
+}
+button{
+    color: white;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+span{
+    background-color: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -3;
+    transition: 0.5s;
+    
+}
+
+button:hover span{
+    width: 100%;
+}
